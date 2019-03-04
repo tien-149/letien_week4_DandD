@@ -52,6 +52,8 @@
 	function resetPuzzlePieces() {
 		// empty the thumnail container
 		piecesBoard.innerHTML = "";
+		//changed code here
+		dropZones.forEach(dropzone => dropzone.innerHTML = "");
 		createPuzzlePieces(this.dataset.puzzleref);
 	}
 	//event handling down here
